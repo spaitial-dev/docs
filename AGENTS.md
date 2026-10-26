@@ -12,6 +12,15 @@
 - Run `mint dev` to preview locally
 - Run `mint broken-links` to check links
 
+## Local preview
+
+The Cloud Agent environment installs the Mintlify CLI (`mint@4.2.1126`) and starts the preview on boot at http://127.0.0.1:3000.
+
+- If you need to start it yourself: `mint dev --no-open --host`
+- `--host` is required. Without it the preview listens on IPv6 localhost only, so `127.0.0.1` cannot connect.
+- Search and the assistant need `mint login`. The preview does not.
+- Checks: `mint broken-links`, `mint validate`, and `mint a11y`
+
 ## Terminology
 
 {/* Add product-specific terms and preferred usage */}
